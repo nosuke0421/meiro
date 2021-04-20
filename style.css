@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.meiro{
+    background-color: aliceblue;
+    height:600px;
+    width:600px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+}
+
+
+.wall{
+    background-color: black;
+}
+
+.start,.start-selected{
+    background-color: blue;
+}
+
+.goal,.goal-selected{
+    background-color: crimson;
+
+}
+
+.now{
+    background-color:rgb(255, 136, 0);
+}
+
+.prev-now{
+    background-color: rgb(255, 136, 0);
+}
+
+.prev{
+    background-color: rgb(108, 104, 150);
+}

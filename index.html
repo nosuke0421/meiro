@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>迷路</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="form-group p-5 col-6">
+                <div class="row m-2">
+                    <div class="col-2"><label for="num" class="form-label">迷路のサイズ</label></div>
+                    <div class="col-10"><select name="" id="num" class="form-control"></select></div>
+                </div>
+                <div class="row m-2">
+                    <div class="col-2"><label for="" class="form-label">生成方法</label></div>
+                    <div class="col-10">
+                        <select name="" id="method" default="0" class="form-control">
+                            <option value="0">棒倒し法</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary m-3" id="create-btn">作成</button>
+                <br>
+                <button class="btn btn-outline-primary m-3" id="start-btn">スタート設定</button>
+                <button class="btn btn-outline-primary m-3" id="goal-btn">ゴール設定</button>
+                <br>
+
+                <button class="btn btn-success m-3" id="depth-first-btn">深さ優先探索</button>
+
+                <button class="btn btn-success m-3" id="breadth-first-btn">幅優先探索</button>
+
+                <button class="btn btn-success m-3" id="a-star-btn">A*アルゴリズム</button>
+
+            </div>
+            <div class="meiro mt-5">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
